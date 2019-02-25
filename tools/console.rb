@@ -17,13 +17,15 @@ ham_sam_card = RecipeCard.new(8, anthony, ham_sandwich)
 grilled_cheese_card = RecipeCard.new(4, barb, grilled_cheese)
 
 ham_sam_ingredients = RecipeIngredient.new(ham_sandwich, ham, bread, cheese)
-
+grilled_cheese_ingredients = RecipeIngredient.new(grilled_cheese, bread, cheese, butter)
 
 
 barb_allergies = Allergen.new(barb)
 carl_allergies = Allergen.new(carl, cheese, butter)
 
+carl.add_recipe_card(9, butter_ham)
 
+anthony.declare_allergen(bread)
 
 #test outputs
   # puts
